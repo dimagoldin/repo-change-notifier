@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  app:
+    build: .  # Build the image using the Dockerfile in the current directory
+    image: github-notifier:latest  # Name the image
+    volumes:
+      - ./configs:/usr/src/app/configs  # Mount the configs directory
+    environment:
+      - RUN_AT=20 14 * * *  # Set the time for the cron job
+    restart: unless-stopped
