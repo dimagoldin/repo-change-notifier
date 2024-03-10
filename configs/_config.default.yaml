@@ -1,0 +1,11 @@
+env:
+  TEAMS_WEBHOOK_URL: ''
+  GITHUB_TOKEN: ''
+  GITHUB_API_BASE_URL: 'https://<github-instance-hostl>/api/v3'
+
+# repos:
+# - url: https://github.com/${OWNER}/${REPO}
+#   branch: main
+#   paths:
+#   - src/
+#   since: 24h
