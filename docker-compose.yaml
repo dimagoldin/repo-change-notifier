@@ -6,5 +6,5 @@ services:
     volumes:
       - ./configs:/usr/src/app/configs  # Mount the configs directory
     environment:
-      - RUN_AT=20 14 * * *  # Set the time for the cron job
+      - RUN_AT=0 9 * * *  # Set the time for the cron job
     restart: unless-stopped
